@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>丝材参谋 · 3D 打印耗材选型</title>
+  <link rel="stylesheet" href="./style.css?v=20261114gh">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      if (localStorage.getItem('fa_theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#/">
+        <span class="brand-mark">
+          <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+            <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M9 21V13l7-4 7 4v8l-7 4-7-4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M9 13l7 4 7-4M16 17v8" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          </svg>
+        </span>
+        <span class="brand-text">丝材参谋<small>Filament Advisor</small></span>
+      </a>
+      <nav class="nav" id="main-nav">
+        <a href="#/" data-route="home">智能推荐</a>
+        <a href="#/materials" data-route="materials">材料库</a>
+        <a href="#/compare" data-route="compare">对比</a>
+        <a href="#/stats" data-route="stats">数据统计</a>
+        <a href="#/about" data-route="about">数据说明</a>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="切换深浅色主题" title="切换浅色 / 深色主题">
+          <span class="theme-icon-sun" aria-hidden="true">☀</span>
+          <span class="theme-icon-moon" aria-hidden="true">☾</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap main" id="app-root"></main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>丝材参谋 · 纯前端静态版（数据内置 24 种耗材）· 推荐仅供参考，正式生产前请以厂商 TDS 为准 · <a href="#/about">数据说明</a></p>
+    </div>
+  </footer>
+
+  <script src="./app.js?v=20261114gh"></script>
+</body>
+</html>
